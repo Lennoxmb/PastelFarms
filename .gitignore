@@ -1,8 +1,9 @@
-HELP.md
+git HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+src/main/java/com/example/PastelFarms/config/SecurityConstants.java
 
 ### STS ###
 .apt_generated
@@ -31,3 +32,6 @@ build/
 
 ### VS Code ###
 .vscode/
+keys.js
+src/main/resources/application.properties
+
