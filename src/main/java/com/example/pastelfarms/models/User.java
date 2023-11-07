@@ -25,25 +25,15 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Column
-    private String avatarImage;
-
-    @JsonBackReference
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "user")
-    private List<Battle> battles;
+//    @JsonBackReference
+//    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "user")
+//    private List<Battle> battles;
 
 
     public User() {
     }
 
 
-
-    public User(String username, String email, String password, String avatarImage) {
-        this.email = email;
-        this.username = username;
-        this.password = password;
-        this.avatarImage = avatarImage;
-    }
 
     public User(String username, String email, String password) {
         this.email = email;
@@ -58,7 +48,7 @@ public class User {
         this.password = password;
     }
 
-    public User(String username, String email, String password, String defaultAvatar, int i) {
+    public User(String username, String email, String password, int i) {
     }
 
 
@@ -92,14 +82,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getAvatarImage() {
-        return avatarImage;
-    }
-
-    public void setAvatarImage(String avatarImage) {
-        this.avatarImage = avatarImage;
     }
 
 }
