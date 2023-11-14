@@ -1,14 +1,10 @@
 package com.example.pastelfarms.models;
 
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
-import java.util.List;
-
 @Entity
-@Table(name = "users")
+@Table(name="users")
 public class User {
 
     @Id
@@ -25,30 +21,7 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-//    @JsonBackReference
-//    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "user")
-//    private List<Battle> battles;
-
-
-    public User() {
-    }
-
-
-
-    public User(String username, String email, String password) {
-        this.email = email;
-        this.username = username;
-        this.password = password;
-    }
-
-    public User(long id, String username, String email, String password) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.password = password;
-    }
-
-    public User(String username, String email, String password, int i) {
+    public User(String username, String email, String password, String defaultAvatar, String defaultBackground, int i) {
     }
 
 
@@ -84,4 +57,19 @@ public class User {
         this.password = password;
     }
 
+    public User() {
+    }
+
+    public User(long id, String email, String username, String password) {
+        this.id = id;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(String email, String username, String password) {
+        this.email = email;
+        this.username = username;
+        this.password = password;
+    }
 }
