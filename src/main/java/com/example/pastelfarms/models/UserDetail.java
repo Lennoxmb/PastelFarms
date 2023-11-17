@@ -5,7 +5,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
-public class PastelFarmsUserDetails extends User implements UserDetails {
+public class UserDetail extends User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
@@ -31,10 +31,11 @@ public class PastelFarmsUserDetails extends User implements UserDetails {
         return true;
     }
 
-    public PastelFarmsUserDetails() {
+    public UserDetail(){
+
     }
 
-    public PastelFarmsUserDetails(long id, String username, String email, String password) {
+    public UserDetail(long id, String username, String email, String password) {
         super(id, username, email, password);
     }
 }
