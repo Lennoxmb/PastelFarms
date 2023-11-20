@@ -1,16 +1,21 @@
-package com.example.pastelfarms.controllers;
-
-import org.springframework.web.bind.annotation.GetMapping;
-
-public class permitAllControllers {
-
-    @GetMapping("/")
-    public String showContact() {
-        return "index";
-    }
-
-    @GetMapping("/about")
-    public String showAbout() {
-        return "about";
-    }
-}
+//package com.example.pastelfarms.controllers;
+//
+//import org.springframework.web.bind.annotation.GetMapping;
+//
+//public class permitAllControllers {
+//
+//    @GetMapping("/")
+//    public String showContact() {
+//        return "index";
+//    }
+//
+//    @GetMapping("/home")
+//    public String GoHome(){
+//        return "index";
+//    }
+//
+//    @GetMapping("/about")
+//    public String showAbout() {
+//        return "about";
+//    }
+//}
