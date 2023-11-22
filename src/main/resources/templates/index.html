@@ -1,9 +1,14 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
-<head th:insert="~{partials/head :: head ('Home Page')}"></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/resets.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+</head>
 <body>
-<nav th:insert="~{partials/navbar :: navbar}"></nav>
-
+<!--<nav th:insert="~{partials/navbar :: navbar}"></nav>-->
+Hi
 
 </body>
 </html>
