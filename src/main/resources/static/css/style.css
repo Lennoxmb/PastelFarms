@@ -1,15 +1,52 @@
-.navbarLinks {
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&family=Tilt+Neon&display=swap');
 
+
+.hidden {
+    display: none;
+}
+/*background*/
+
+.nav {
+    background-image: linear-gradient(rgba(188, 239, 242, 1) 25%,rgba(214,248, 237, 1), rgb(255, 255, 255));
 }
 
+/*image logo stuff*/
 .navBarLogo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 7em;
+    height: 7em;
+}
+
+.logo-wrap {
+    margin-top: 5px;
+}
+
+.logoImage {
+    border-radius: 50%;
+}
+
+/*getting linnks ligned up with eachother*/
+.navbarLinks {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Signika Negative", sans-serif;
 }
 
 .navbarListLinks {
     list-style: none;
     display: flex;
+}
+
+.authenticationChanges {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+/*size of the links boxes*/
+.directoryLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 7em;
+    width: 100%;
 }
