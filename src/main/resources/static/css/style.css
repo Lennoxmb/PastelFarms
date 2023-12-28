@@ -12,8 +12,6 @@
 
 /*image logo stuff*/
 .navBarLogo {
-    width: 7em;
-    height: 7em;
 }
 
 .logo-wrap {
@@ -22,6 +20,7 @@
 
 .logoImage {
     border-radius: 50%;
+    width: 7em;
 }
 
 /*getting linnks ligned up with eachother*/
@@ -49,4 +48,8 @@
     align-items: center;
     max-width: 7em;
     width: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: larger;
 }
