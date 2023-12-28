@@ -1,20 +1,23 @@
-<!--Hotfix-->
+
 <div th:fragment="navbar" class="nav" xmlns:sec="http://www.w3.org/1999/xhtml">
 
     <div class="nav">
-        <div class="logo-wrap grow">
-            <div class="icon">
-                <img src="/images/placeholder.png" alt="icon">
-            </div>
-            <div class="logo grow">
-                <h2 class="nav-logo grow">Dungeons & Dust Bunnies</h2>
-            </div>
-        </div>
 
-        <div class="menu-wrap">
-            <ul>
-                <li><a th:href="@{/}">Home</a></li>
-                <li><a th:href="@{/shop}">Shop</a></li>
+        <div class="navbarLinks">
+            <a th:href="@{/}">Home</a>
+            <a th:href="@{/ourFarm}">Our Farm</a>
+            <a th:href="@{/shop}">Shop</a>
+            <div class="logo-wrap">
+                <div class="navBarLogo">
+                    <img src="/images/placeholder.png" alt="icon">
+                </div>
+<!--                <div class="logo grow">-->
+<!--                    <h2 class="nav-logo grow">Farm Logo</h2>-->
+<!--                </div>-->
+            </div>
+
+            <ul class="navbarListLinks">
+                <li><a th:href="@{/shop}">Contact</a></li>
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>
                 <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>
                 <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>
