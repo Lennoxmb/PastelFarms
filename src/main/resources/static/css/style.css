@@ -4,52 +4,98 @@
 .hidden {
     display: none;
 }
-/*background*/
 
-.nav {
-    background-image: linear-gradient(rgba(188, 239, 242, 1) 25%,rgba(214,248, 237, 1), rgb(255, 255, 255));
+
+
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(rgba(188, 239, 242, 1) 25%, rgba(214,248, 237, 1), rgb(255, 255, 255));
+    padding: 10px 0;
 }
 
-/*image logo stuff*/
-.navBarLogo {
+/* Links and logo container */
+/*.navbarLinks {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between; */
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0 20px;*/
+/*}*/
+
+
+/*.logo-wrap {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.navBarLogo {*/
+/*}*/
+
+/*.logoImage {*/
+/*    border-radius: 50%;*/
+/*    width: 7em; !* IMAGE SIZE*!*/
+/*}*/
+
+/* Link styling */
+/*.directoryLink {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    font-weight: 300;*/
+/*    font-size: larger;*/
+/*    padding: 0 15px;*/
+/*}*/
+
+
+.navbarLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo-wrap {
-    margin-top: 5px;
-}
-
-.logoImage {
-    border-radius: 50%;
-    width: 7em;
-}
-
-/*getting linnks ligned up with eachother*/
-.navbarLinks {
     display: flex;
-    justify-content: space-around;
-    font-family: "Signika Negative", sans-serif;
+    align-items: center;
+    margin: 0 20px; /* Optional: Adjust space around logo */
 }
 
-.navbarListLinks {
-    list-style: none;
+.navBarLogo {
     display: flex;
+    align-items: center;
 }
 
-.authenticationChanges {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0;
-}
-/*size of the links boxes*/
 .directoryLink {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 7em;
-    width: 100%;
     color: black;
     text-decoration: none;
     font-weight: 300;
     font-size: larger;
+    padding: 0 15px;
+}
+
+/* Adjust the logo size if needed */
+.logoImage {
+    border-radius: 50%;
+    width: 7em; /* IMAGE SIZE*/
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbarLinks {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .directoryLink {
+        padding: 10px 0; /* Add padding for vertical spacing */
+    }
 }

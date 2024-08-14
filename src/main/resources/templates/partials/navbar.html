@@ -1,36 +1,35 @@
 
 <div th:fragment="navbar" class="nav" xmlns:sec="http://www.w3.org/1999/xhtml">
 
-    <div class="nav">
-
+    <div class="navbar">
         <div class="navbarLinks">
             <a class="directoryLink" th:href="@{/}">Home</a>
-            <a class="directoryLink" th:href="@{/ourFarm}">Our Farm</a>
-            <a class="directoryLink" th:href="@{/shop}">Shop</a>
+            <a class="directoryLink" th:href="@{/ourFarm}">Our Story</a>
+            <a class="directoryLink" th:href="@{/animals}">Animals</a>
             <div class="logo-wrap">
                 <div class="navBarLogo">
                     <img class="logoImage" src="/images/logo.png" alt="icon">
                 </div>
-
-<!--                <div class="logo grow">-->
-<!--                    <h2 class="nav-logo grow">Farm Logo</h2>-->
-<!--                </div>-->
             </div>
+            <a class="directoryLink" th:href="@{/shop}">Shop</a>
+            <a class="directoryLink" th:href="@{/cryptid}">Camp Cryptid</a>
+            <a class="directoryLink" th:href="@{/briarwood}">Briarwood Ranch</a>
+        </div>
+    </div>
 
-<!--            <div class="navbarListLinks">-->
-                <a class="directoryLink" th:href="@{/shop}">Contact</a>
-                <ul class="navbarListLinks authenticationChanges directoryLink">
-                    <li class="directoryLink" sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>
-                    <li class="directoryLink" sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>
-                </ul>
-                <ul class="navbarListLinks authenticationChanges directoryLink">
-                    <li class="directoryLink" sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>
-                    <li class="directoryLink" sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>
-                </ul>
+
+    <!--                <ul class="navbarListLinks authenticationChanges directoryLink">-->
+<!--                    <li class="directoryLink" sec:authorize="isAuthenticated()"><a th:href="@{/profile}">Profile</a></li>-->
+<!--                    <li class="directoryLink" sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>-->
+<!--                </ul>-->
+<!--                <ul class="navbarListLinks authenticationChanges directoryLink">-->
+<!--                    <li class="directoryLink" sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>-->
+<!--                    <li class="directoryLink" sec:authorize="isAuthenticated()"><a id="logOutButton">Logout</a></li>-->
+<!--                </ul>-->
             </div>
-            <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">
-                <button class="logout-btn">#</button>
-            </form>
+<!--            <form class="logout-form hidden" th:action="@{/logout}" th:method="post" id="logOutForm">-->
+<!--                <button class="logout-btn">#</button>-->
+<!--            </form>-->
         </div>
 <!--        <div id="menuToggle">-->
 <!--            <input type="checkbox" />-->
@@ -55,17 +54,17 @@
 
 
 
-        <script>
-            const logOutForm = document.getElementById('logOutForm')
-            const logOutButton = document.getElementById('logOutButton')
-            const logOutButtonDD = document.getElementById('logOutButtonDD')
-            logOutButton.addEventListener('click', () => {
-                logOutForm.submit()
-            })
-            logOutButtonDD.addEventListener('click', () => {
-                logOutForm.submit()
-            })
+<!--        <script>-->
+<!--            const logOutForm = document.getElementById('logOutForm')-->
+<!--            const logOutButton = document.getElementById('logOutButton')-->
+<!--            const logOutButtonDD = document.getElementById('logOutButtonDD')-->
+<!--            logOutButton.addEventListener('click', () => {-->
+<!--                logOutForm.submit()-->
+<!--            })-->
+<!--            logOutButtonDD.addEventListener('click', () => {-->
+<!--                logOutForm.submit()-->
+<!--            })-->
 
-        </script>
+<!--        </script>-->
     </div>
 </div>
