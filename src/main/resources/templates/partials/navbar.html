@@ -3,17 +3,23 @@
 
     <div class="navbar">
         <div class="navbarLinks">
-            <a class="directoryLink" th:href="@{/}">Home</a>
-            <a class="directoryLink" th:href="@{/ourFarm}">Our Story</a>
-            <a class="directoryLink" th:href="@{/animals}">Animals</a>
+
+            <div class="row leftLinks">
+                <a class="directoryLink" th:href="@{/}">Home</a>
+                <a class="directoryLink" th:href="@{/ourFarm}">Our Story</a>
+                <a class="directoryLink" th:href="@{/animals}">Animals</a>
+            </div>
             <div class="logo-wrap">
                 <div class="navBarLogo">
                     <img class="logoImage" src="/images/logo.png" alt="icon">
                 </div>
             </div>
+                <div class="row rightLinks">
             <a class="directoryLink" th:href="@{/shop}">Shop</a>
             <a class="directoryLink" th:href="@{/cryptid}">Camp Cryptid</a>
             <a class="directoryLink" th:href="@{/briarwood}">Briarwood Ranch</a>
+                </div>
+
         </div>
     </div>
 
