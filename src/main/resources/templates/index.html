@@ -4,15 +4,36 @@
 <body>
 <nav th:insert="~{partials/navbar :: navbar}"></nav>
 <div class="page-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="column headerImage">
-                <img src="/images/market.png" alt="header">
-                <h1>Home</h1>
-                <p>Welcome to the home page!</p>
+<!-- image for title and motto-->
+    <div class="container headerContainer">
+        <div class="row headerRow">
+        </div>
+        <div class="homeContent">
+            <h1>Pastel Farms</h1>
+            <p>Bring Color To Your Table</p>
+        </div>
+    </div>
+<!--    end for image and beginning of info blurb with slideshow-->
+    <div class="container infoBlurb">
+        <div class="row infoAndPic">
+<!--            slideshow half-->
+            <div class="column slideshowColumn">
+                <div id="image-head"></div>
+            </div>
+<!--            blurb side-->
+            <div class="infoBlurbColumn column">
+                <div class="infoBlurbTitle">
+                    Title
+                </div>
+                <div class="infoBlurbParagraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto commodi consectetur cumque, ducimus expedita fuga harum in inventore iure, neque nobis quae quam quia repudiandae sint sit, tempore voluptas.
+                </div>
             </div>
         </div>
     </div>
+
+
 </div>
 </body>
+<script src="/js/slideshow.js"></script>
 </html>

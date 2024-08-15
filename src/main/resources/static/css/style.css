@@ -6,12 +6,13 @@
 }
 
 .navbar {
-    margin: 10px 0;
+    background-image: linear-gradient(rgba(188, 239, 242, 1) 25%, rgba(214,248, 237, 1), rgb(255, 255, 255));
+    padding: 10px 0;
 }
 .navbarLinks {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute space between leftLinks, logo-wrap, and rightLinks */
+    justify-content: space-between;
     width: 80vw;
     margin: 0 auto;
     padding: 0 20px;
@@ -23,13 +24,13 @@
 }
 
 .leftLinks {
-    width: auto; /* Adjust width to fit the content */
-    flex: 1; /* Allow it to take up available space */
-    justify-content: space-evenly; /* Evenly space links within the section */
+    width: auto;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 .rightLinks {
-    width: auto; /* Adjust width to fit the content */
+    width: auto;
     flex: 1; /* Allow it to take up available space */
     justify-content: space-evenly; /* Evenly space links within the section */
 }
@@ -37,7 +38,7 @@
 .logo-wrap {
     display: flex;
     align-items: center;
-    margin: 0 10px; /* Adjust space around the logo */
+    margin: 0 10px;
 }
 
 .navBarLogo {
@@ -47,7 +48,7 @@
 
 .logoImage {
     border-radius: 50%;
-    width: 7em; /* Adjust size if needed */
+    width: 7em; /* LOGO SIZE*/
 }
 
 .directoryLink {
@@ -58,28 +59,28 @@
     text-decoration: none;
     font-weight: 300;
     font-size: larger;
-    padding: 0 10px; /* Adjust padding for better spacing */
-    white-space: nowrap; /* Prevent wrapping */
+    padding: 0 10px;
+    white-space: nowrap;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbarLinks {
-        flex-direction: column; /* Stack links vertically on small screens */
-        align-items: center; /* Center items horizontally */
-    }
+/*@media (max-width: 768px) {*/
+/*    .navbarLinks {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
 
-    .leftLinks, .rightLinks {
-        width: 100%; /* Make each section full-width on small screens */
-        justify-content: center; /* Center links within each section */
-        margin-bottom: 10px; /* Add some space between sections */
-    }
+/*    .leftLinks, .rightLinks {*/
+/*        width: 100%;*/
+/*        justify-content: center; */
+/*        margin-bottom: 10px; */
+/*    }*/
 
-    .logo-wrap {
-        margin: 10px 0; /* Adjust spacing around logo for vertical stacking */
-    }
+/*    .logo-wrap {*/
+/*        margin: 10px 0;*/
+/*    }*/
 
-    .directoryLink {
-        padding: 5px 10px; /* Adjust padding for vertical stacking */
-    }
-}
+/*    .directoryLink {*/
+/*        padding: 5px 10px;*/
+/*    }*/
+/*}*/
