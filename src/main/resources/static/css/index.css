@@ -73,18 +73,49 @@
 
 .infoBlurbTitle {
     font-weight: bold;
+    font-size: xxx-large;
     display: flex;
     justify-content: center;
 }
 
 .infoBlurbParagraph {
-    font-size: 16px;
+    font-size: large;
     line-height: 1.5;
     text-align: center;
 }
 
-.threeColumnUpdate {
-    width: 100px;
-    height: auto;
+/*Three columns images*/
+
+.threeColumnContainer {
+    margin: 3em 1em;
 }
 
+.threeColumns {
+    align-items: center;
+}
+
+.threeColumnImageManipulation {
+    margin: 1em;
+}
+
+.threeColumnImage {
+    width: 25em;
+    height: 30em;
+    object-fit: cover;
+}
+
+/*three columns titles*/
+
+.threeColumnTitle {
+    font-size: x-large;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*three column paragraph*/
+.threeColumnParagraph {
+    margin: 1em;
+    text-align: center;
+    font-size: large;
+    width: 400px;
+}
