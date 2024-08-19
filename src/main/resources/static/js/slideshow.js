@@ -12,12 +12,17 @@ const images = [
 ];
 
 let imageHead = document.getElementById("image-head");
-
 let i = 0;
+
 setInterval(function() {
-    imageHead.style.backgroundImage = "url(" + images[i] + ")";
-    i = i + 1;
-    if (i === images.length) {
-        i =  0;
-    }
+    imageHead.classList.remove('fade-in');
+    imageHead.classList.add('fade-out');
+
+    setTimeout(function() {
+        imageHead.style.backgroundImage = "url(" + images[i] + ")";
+        imageHead.classList.remove('fade-out');
+        imageHead.classList.add('fade-in');
+
+        i = (i + 1) % images.length; // Loop back to the first image
+    }, 500); // Duration should match the CSS transition duration
 }, 5000);

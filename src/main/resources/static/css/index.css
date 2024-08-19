@@ -32,6 +32,15 @@
     margin: 5px;
     background-repeat: no-repeat;
     background-image: url("https://wallpaperaccess.com/full/251722.jpg");
+    transition: opacity .5s ease-in-out;
+}
+
+#image-head.fade-out {
+    opacity: 0;
+}
+
+#image-head.fade-in {
+    opacity: 1;
 }
 
 .infoBlurb {
