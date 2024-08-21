@@ -1,0 +1,44 @@
+<footer th:fragment="footer" xmlns:sec="http://www.w3.org/1999/xhtml">
+    <div class="container footerContainer">
+        <div class="row footerRow">
+            <div class="column footerColumn">
+                <div class="spacingRow">
+                    <div class="socialRow row">
+                        <!--            facebook-->
+                        <a href="https://www.facebook.com/pastelfarms.me/" target="_blank">
+                            <img class="socialLong" src="/images/facebooklogo.png"></a>
+                        <!--twiter-->
+                        <a href="https://twitter.com/pastelfarms/" target="_blank">
+                            <img class="socialLong" src="/images/twitterlogo.png"></a>
+                        <!--Youtube-->
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//dndb.me/"
+                           target="_blank">
+                            <img class="socialLong" src="/images/youtubelogo.png"></a>
+                        <!--instagram-->
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//dndb.me/"
+                           target="_blank">
+                            <img class="socialLong" src="/images/instalogo.png"></a>
+                    </div>
+                    <!--                link rows-->
+                    <div class="row linkRow">
+                        <div class="column">
+                            <a class="footer-link" th:href="@{/}">Home</a>
+                        </div>
+                        <div class="column">
+                            <a class="footer-link" th:href="@{/team}">Team</a>
+                        </div>
+                        <div class="column">
+                            <a class="footer-link" th:href="@{/about}">About</a>
+                        </div>
+                        <div>
+                            <a class="footer-link" th:href="@{/contact}">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="poweredContainer container">
+            <p>Llorem ipsm lorem ipsm Powered By Lorem Ipsm</p>
+        </div>
+    </div>
+</footer>
