@@ -1,12 +1,12 @@
 const images = [
 
-    'https://1.bp.blogspot.com/-55tCw17XICU/UY-RzZaDItI/AAAAAAAABNw/-2gcvcNSJSY/s1600/bright-color-background-wallpaperx.jpg',
+    './images/gus.jpg',
 
-    'https://wallpaperaccess.com/full/251722.jpg',
+    './images/chickensout.jpg',
 
-    'https://eskipaper.com/images/cool-space-wallpaper-4.jpg',
+    './images/frank.jpg',
 
-    './images/chicken.jpg'
+    './images/hennypenny.jpg'
 
 
 ];
