@@ -1,5 +1,9 @@
 /*!*header image*!*/
 
+body {
+    overflow-x: hidden;
+}
+
 .headerContainer {
     position: relative;
     /*width: 100vw;*/
