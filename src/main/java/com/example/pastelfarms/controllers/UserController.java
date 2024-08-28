@@ -1,7 +1,9 @@
 package com.example.pastelfarms.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+@Controller
 public class UserController {
 
     @GetMapping("/")
@@ -14,8 +16,8 @@ public class UserController {
         return "index";
     }
 
-    @GetMapping("/about")
+    @GetMapping("/ourStory")
     public String showAbout() {
-        return "about";
+        return "ourStory";
     }
 }

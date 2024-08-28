@@ -19,7 +19,7 @@ public class SecurityConfig {
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/profile", "/profile/**", "/edit/profile").authenticated()
-                        .requestMatchers("/register", "/login", "/home", "/", "/about", "/contact", "/send-email", "/welcome", "/error", "/pizzaProject", "/codeupProject", "/coffeeProject", "/konamiProject", "/weathermap", "/movieproject", "/projectList").permitAll()
+                        .requestMatchers("/register", "/login", "/home", "/", "/about", "/contact", "/send-email", "/welcome", "/error", "/ourStory").permitAll()
                         .requestMatchers("/css/**", "/js/**", "/images/**", "/keys.js").permitAll()
                 )
                 .formLogin((login) -> login.loginPage("/login").defaultSuccessUrl("/profile"))
