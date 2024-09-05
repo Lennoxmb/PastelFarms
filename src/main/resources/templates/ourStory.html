@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Our Story</title>
-</head>
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:insert="~{partials/head :: head ('Pastel Farms')}"></head>
 <body>
-<h1>Our Story</h1>
-<p>This is a test page.</p>
+<nav th:insert="~{partials/navbar :: navbar}"></nav>
+<div class="page-wrapper">
+    <!-- image for title-->
+    <div class="container storyHeaderContainer">
+        <div class="row headerRow">
+        </div>
+        <div class="homeContent">
+            <h1>Our Story</h1>
+        </div>
+    </div>
+
+
+
+</div>
 </body>
 </html>
