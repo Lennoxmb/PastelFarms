@@ -15,3 +15,24 @@
     text-align: center;
     padding: 20px;
 }
+
+/*how farm*/
+.howFarmContainer {
+    padding: 2em;
+}
+
+
+.howFarmRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.imageHowFarmColumn img {
+    width: 30em;
+    align-self: center;
+}
