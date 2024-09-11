@@ -1,3 +1,8 @@
+.ourStoryPageWrapper {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 19%, rgba(255,252,190,1) 30%, rgba(202,255,189,1) 40%, rgba(194,221,255,1) 59%, rgba(232,205,255,1) 82%, rgba(255,255,255,1) 94%);
+}
+
 .storyHeaderContainer {
     position: relative;
     /*width: 100vw;*/

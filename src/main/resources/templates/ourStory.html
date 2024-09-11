@@ -3,7 +3,7 @@
 <head th:insert="~{partials/head :: head ('Pastel Farms')}"></head>
 <body>
 <nav th:insert="~{partials/navbar :: navbar}"></nav>
-<div class="page-wrapper">
+<div class="page-wrapper ourStoryPageWrapper">
     <!-- image for title-->
     <div class="container storyHeaderContainer">
         <div class="row headerRow">
@@ -27,8 +27,21 @@
 
     <div class="container howFarmContainer">
         <div class="row howFarmRow">
+            <div class="column imageHowFarmColumn">
+                <img src="/images/placeholder.png">
+            </div>
             <div class="column blurbHowFarmColumn">
-                <h2>How Farm</h2>
+                <h2>What We Do</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam commodi delectus dolore doloremque ipsa itaque officia quaerat, quas quis, sapiente tempore voluptates voluptatibus. Error facilis magnam magni repellat voluptatibus.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container howFarmContainer">
+        <h2>Us</h2>
+        <div class="row howFarmRow">
+            <div class="column blurbHowFarmColumn">
+                <h2>Remsie</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam commodi delectus dolore doloremque ipsa itaque officia quaerat, quas quis, sapiente tempore voluptates voluptatibus. Error facilis magnam magni repellat voluptatibus.</p>
             </div>
             <div class="column imageHowFarmColumn">
@@ -37,7 +50,19 @@
         </div>
     </div>
 
+    <div class="container howFarmContainer">
+        <div class="row howFarmRow">
+            <div class="column imageHowFarmColumn">
+                <img src="/images/placeholder.png">
+            </div>
+            <div class="column blurbHowFarmColumn">
+                <h2>Bludie</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam commodi delectus dolore doloremque ipsa itaque officia quaerat, quas quis, sapiente tempore voluptates voluptatibus. Error facilis magnam magni repellat voluptatibus.</p>
+            </div>
+        </div>
+    </div>
 
 </div>
+<footer th:insert="~{partials/footer :: footer}"></footer>
 </body>
 </html>
